@@ -1,4 +1,19 @@
-import { Main, Banner,Header,Nav, Contats,ContainerGroup, Card, BoxTitulo,Sobre, Container, GroupSobre } from "./styles.js";
+import { Main,
+         Banner,
+         Header,
+         Nav, 
+         Contats,
+         ContainerGroup, 
+         Text, 
+         BoxTitulo,
+         Center, 
+         Container, 
+         GroupSobre,
+         ConhecimentosTitulo,
+         CardPrincipal,
+         Card,
+         Image
+        } from "./styles.js";
 import GlobalStyle from "./styles.js";
 
 function App() {
@@ -28,7 +43,7 @@ function App() {
               </ul>
             </Nav>
           </Header>
-            <Card>
+            <Text>
               
               <BoxTitulo>
 
@@ -38,10 +53,10 @@ function App() {
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </BoxTitulo>
               <img src="https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/912957/91295778c2a22a7fd7d91496b859f1e0_large.jpg"/>
-          </Card>
+          </Text>
           </Container>
         </Banner>
-        <Sobre>
+        <Center>
           <ContainerGroup>
             <GroupSobre>
               <div>
@@ -55,7 +70,61 @@ function App() {
               </BoxTitulo>
             </GroupSobre>
           </ContainerGroup>
-        </Sobre>
+        </Center>
+        <Center>
+          <ConhecimentosTitulo>
+            <h3><span>Conhecimentos</span></h3>
+            <h1>Conhecimentos Específicos</h1>
+            <hr/>
+            <Center>
+              <CardPrincipal>
+                <Image>
+                  <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>                  
+                </Image>
+               
+                  <h1>Titulo</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                
+              </CardPrincipal>
+              <Card>
+                <Image>
+                                    
+                </Image>
+                <h1>Titulo</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </Card>
+              <Card>
+                <Image>
+                                    
+                </Image>
+                <h1>Titulo</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </Card>
+              <Card>
+                <Image>
+                                    
+                </Image>
+                <h1>Titulo</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </Card>
+              <Card>
+                <Image>
+                                    
+                </Image>
+                <h1>Titulo</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </Card>
+              <Card>
+                <Image>
+                  <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>                  
+                </Image>
+                <h1>Titulo</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </Card>
+            </Center>
+            
+          </ConhecimentosTitulo>
+        </Center>
       </Main>
     </>
   );

@@ -52,7 +52,7 @@ export const Container = styled.div`
     margin-left: 5%;
     width: 70%
 `
-export const Card = styled.div`
+export const Text = styled.div`
     
     display:flex;
     margin-top: 150px;
@@ -112,12 +112,14 @@ export const Contats = styled.div`
  `;
  /*section 2*/
 
- export const Sobre = styled.section`
- 
+ export const Center = styled.section`
+    
     display: flex;
+    width: 100%;
     justify-content:center;
     align-items: center;
     height: 500px;
+    flex-wrap: wrap;
  `;
  
 export const ContainerGroup = styled.div`
@@ -145,3 +147,48 @@ export const GroupSobre = styled.div`
     }
 
 `
+
+/*section 3 */
+
+export const ConhecimentosTitulo = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 100px;
+
+    h3 span{
+        color: #900020;
+    };
+    
+
+    h1{
+        font-size: 25px;
+    };
+    
+    hr{
+        border: 2px dashed #900020;
+        border-radius: 4px;
+        width: 25%;
+    };
+`;
+
+export const CardPrincipal = styled.div`
+    width: 33%;
+    background-color: #900020;
+    display: flex;
+    flex-direction: column;
+
+
+`;
+
+export const Card = styled.div`
+    width: 33%;
+    
+`;
+
+export const Image = styled.figure`
+
+`;
+
