@@ -86,10 +86,10 @@ export const Contats = styled.div`
 
  export const BoxTitulo = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     width:35%;
-    height: 200px;
+    height: 180px;
 
     h3 span{
         color: #900020;
@@ -97,16 +97,11 @@ export const Contats = styled.div`
 
     h1{
         font-size: 35px;
-    }
-    h4{
-        font-weight:600;
-        font-size: 17px;
-        margin-top: -10px
-    }
+    };
     p{
         color: grey;
         font-size: 15px;
-    }
+    };
     
     
  `;
@@ -116,6 +111,7 @@ export const Contats = styled.div`
     
     display: flex;
     width: 100%;
+    align-content: center;
     justify-content:center;
     align-items: center;
     height: 500px;
@@ -155,8 +151,8 @@ export const ConhecimentosTitulo = styled.div`
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    width: 35%;
-    height: 100px;
+    width: 70%;
+    
 
     h3 span{
         color: #900020;
@@ -170,25 +166,82 @@ export const ConhecimentosTitulo = styled.div`
     hr{
         border: 2px dashed #900020;
         border-radius: 4px;
-        width: 25%;
+        width: 10%;
     };
 `;
 
-export const CardPrincipal = styled.div`
-    width: 33%;
-    background-color: #900020;
-    display: flex;
+export const CardGroup = styled.div`
+    width: 90%;
+    display:flex;
+    height:80%;
+    justify-content: space-between;
     flex-direction: column;
-
-
+    align-items: flex-start;
 `;
-
 export const Card = styled.div`
-    width: 33%;
+    width: 290px;
+    margin:4px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid grey;
+
+    :first-child{
+        color:white;
+        border: 1px solid #900020;
+        background-color: #900020;
+
+        figure{
+            background-color: white;
+        }
+    }
     
 `;
 
 export const Image = styled.figure`
-
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #900020;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 10px 0 10px;
 `;
 
+/*footer */
+export const Footer = styled.footer`
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: grey;
+
+    h3{
+        font-size: 20px;
+    }
+    span{
+        color: #900020;
+        
+    }
+`;
+
+export const ContatsFooter = styled.div`
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+`;
+export const ContatsImage = styled.figure`
+    background-color: white;
+    border-radius: 50%;
+
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+`;
