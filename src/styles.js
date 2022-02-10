@@ -7,6 +7,14 @@ export default createGlobalStyle`
         padding: 0;
         font-family: sans-serif;
         
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:visited{
+            color: black
+        }
+        
     }
 `;
 
@@ -45,7 +53,12 @@ export const Nav = styled.nav`
 export const Banner = styled.section`
     display: flex;
     height: 500px;
-    background-image: linear-gradient(76deg, white 50%, #900020 40%)
+
+    background-image:
+    url("https://urbanarts.vteximg.com.br/arquivos/ids/11066889/198276_Ampliada.jpg?v=637782398059700000");
+    
+
+    
 `;
 
 export const Container = styled.div`
@@ -55,11 +68,14 @@ export const Container = styled.div`
 export const Text = styled.div`
     
     display:flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 150px;
 
     img{
-        margin-top: -60px;
-        width:380px;
+        margin-top: 20px;
+        width:230px;
+       
     }
     
 `;
