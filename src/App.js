@@ -19,8 +19,16 @@ import { Main,
         } from "./styles.js";
 import GlobalStyle from "./styles.js";
 import BannerPerfil  from "../src/images/img/perfilbanner (cópia).png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-function App() {
+
+const App = () => {
+  useEffect(() => {
+      Aos.init({duration: 2000 });
+
+  }, [])
   return (
     <>
       <GlobalStyle />
@@ -47,114 +55,123 @@ function App() {
               </ul>
             </Nav>
           </Header>
-            <Text>
+            <Text >
               
-              <BoxTitulo>
+              <BoxTitulo data-aos="fade-right">
 
                 <h3><span>Hello I'm</span></h3>
                 <h1>Taiana Ritter</h1>
                 <h4>profissional freelance and web developer</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </BoxTitulo>
-              <img src={BannerPerfil} alt="logo"/>
+              <img data-aos="fade-left"src={BannerPerfil} alt="logo"/>
           </Text>
           </Container>
         </Banner>
-        <Center id="Sobre">
-          <ContainerGroup >
-            <GroupSobre>
-              <div>
-                <img src="https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/912957/91295778c2a22a7fd7d91496b859f1e0_large.jpg"/>
-              </div>
-              <BoxTitulo>
-                <h3><span>Sobre</span></h3>
-                      <h1>Perfil Profissional!</h1>
-                      <hr/>
-                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              </BoxTitulo>
-            </GroupSobre>
-          </ContainerGroup>
-        </Center>
-        <Center>
-          <ConhecimentosTitulo  id="Conhecimentos">
-            <h3><span>Conhecimentos</span></h3>
-            <h1>Conhecimentos Específicos</h1>
-            <hr/>
-            <Center>
-              <Card>
+        <ContainerGroup id="Sobre">
+          <Center >
+              <GroupSobre data-aos="fade-left">
+                <div>
+                  <img src="https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/912957/91295778c2a22a7fd7d91496b859f1e0_large.jpg"/>
+                </div>
+                <BoxTitulo>
+                  <h3><span>Sobre</span></h3>
+                        <h1>Perfil Profissional!</h1>
+                        <hr/>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </BoxTitulo>
+              </GroupSobre>
+          </Center>
+        </ContainerGroup>
+
+        <ContainerGroup  id="Conhecimentos">
+          <Center>
+            <ConhecimentosTitulo>
+              <h3><span>Conhecimentos</span></h3>
+              <h1>Conhecimentos Específicos</h1>
+              <hr/>
+              <Center data-aos="fade-left">
+                <Card >
+                  <CardGroup>
+                    <Image>
+                      <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>                  
+                    </Image>
+
+                    <h1>Titulo</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </CardGroup>
+                </Card>
+                <Card>
+                  <CardGroup>
+                  <Image>
+                    <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>             
+                  </Image>
+                  <h1>Titulo</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </CardGroup>
+                </Card>
+                <Card>
+                <CardGroup>
+                  <Image>
+                    <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>          
+                  </Image>
+                  <h1>Titulo</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </CardGroup>
+                </Card>
+                <Card>
+                <CardGroup>
+                  <Image>
+                    <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>               
+                  </Image>
+                  <h1>Titulo</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </CardGroup>
+                </Card>
+                <Card>
+                <CardGroup>
+                  <Image>
+                    <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>          
+                  </Image>
+                  <h1>Titulo</h1>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </CardGroup>
+                </Card>
+                <Card>
                 <CardGroup>
                   <Image>
                     <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>                  
                   </Image>
-
                   <h1>Titulo</h1>
                   <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </CardGroup>
-              </Card>
-              <Card>
-                <CardGroup>
-                <Image>
-                  <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>             
-                </Image>
-                <h1>Titulo</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </CardGroup>
-              </Card>
-              <Card>
-              <CardGroup>
-                <Image>
-                  <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>          
-                </Image>
-                <h1>Titulo</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </CardGroup>
-              </Card>
-              <Card>
-              <CardGroup>
-                <Image>
-                  <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>               
-                </Image>
-                <h1>Titulo</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </CardGroup>
-              </Card>
-              <Card>
-              <CardGroup>
-                <Image>
-                  <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>          
-                </Image>
-                <h1>Titulo</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </CardGroup>
-              </Card>
-              <Card>
-              <CardGroup>
-                <Image>
-                  <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="instagram"/>                  
-                </Image>
-                <h1>Titulo</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </CardGroup>
-              </Card>
-            </Center>
+                  </CardGroup>
+                </Card>
+              </Center>
             
           </ConhecimentosTitulo>
         </Center>
-        <Center>
-          <ContainerGroup id="Objetivos">
-            <GroupSobre>
-              <BoxTitulo>
-                <h3><span>Objetivos</span></h3>
-                      <h1>Foco Profissional!</h1>
-                      <hr/>
-                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              </BoxTitulo>
-              <div>
-                <img src="https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/912957/91295778c2a22a7fd7d91496b859f1e0_large.jpg"/>
-              </div>
-            </GroupSobre>
-          </ContainerGroup>
-        </Center>
+        </ContainerGroup>
+        
+
+        <ContainerGroup id="Objetivos">
+          <Center>
+            
+              <GroupSobre data-aos="fade-right">
+                <BoxTitulo>
+                  <h3><span>Objetivos</span></h3>
+                        <h1>Foco Profissional!</h1>
+                        <hr/>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </BoxTitulo>
+                <div>
+                  <img src="https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/912957/91295778c2a22a7fd7d91496b859f1e0_large.jpg"/>
+                </div>
+              </GroupSobre>
+            
+          </Center>
+        </ContainerGroup>
+
+        
         <Footer id="Contatos">
           <h3>Taiana<span> Ritter</span></h3>
           <ContatsFooter>

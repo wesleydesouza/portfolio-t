@@ -19,7 +19,7 @@ export default createGlobalStyle`
 `;
 
 export const Main = styled.main`
-   
+   background-color:#fff5f5;
 `;
 /*Section 1*/
 
@@ -53,12 +53,8 @@ export const Nav = styled.nav`
 export const Banner = styled.section`
     display: flex;
     height: 500px;
-
     background-image:
-    url("https://urbanarts.vteximg.com.br/arquivos/ids/11066889/198276_Ampliada.jpg?v=637782398059700000");
-    
-
-    
+    url("https://iraniansurgery.com/wp-content/uploads/iraniansurgery-dentistry-min.jpg");
 `;
 
 export const Container = styled.div`
@@ -66,16 +62,15 @@ export const Container = styled.div`
     width: 70%
 `
 export const Text = styled.div`
-    
+
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 98px;
 
     img{
-        margin-top: 20px;
         width:230px;
-       
+        
     }
     
 `;
@@ -92,7 +87,7 @@ export const Contats = styled.div`
         padding: 1px;
         border: 1px solid grey;
         border-radius: 20px;
-        margin-top: 190px;
+        
         
     }
     ul li{
@@ -135,9 +130,9 @@ export const Contats = styled.div`
  `;
  
 export const ContainerGroup = styled.div`
-    width: 60%;
-    
-
+    width:  80%;
+    margin: auto;
+    margin-top:40vh;
 `;
 
 export const GroupSobre = styled.div`
@@ -167,7 +162,8 @@ export const ConhecimentosTitulo = styled.div`
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 100%;
+    
     
 
     h3 span{
@@ -237,6 +233,7 @@ export const Footer = styled.footer`
     align-items:center;
     justify-content: space-evenly;
     background-color: grey;
+    margin-top:30vh;
 
     h3{
         font-size: 20px;
