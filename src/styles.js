@@ -7,6 +7,7 @@ export default createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
         font-family: sans-serif, arial;
         
         a{
@@ -22,6 +23,7 @@ export default createGlobalStyle`
 
 export const Main = styled.main`
    background-color:#fff5f5;
+   
 `;
 /*Section 1*/
 
@@ -33,11 +35,10 @@ export const Header = styled.header`
     z-index: 10;
     border-bottom: 1px solid rgba(0, 0 ,0, 0.8);
     width: 100%;
-    height: 30px;
-    font-size: 18px;
-    a h3,span{
+    height: 60px;
+    a h3, a span{
         font-family: 'Redressed', cursive;
-        font-size: 25px;
+        font-size: 1.6rem;
     }
     span{
         
@@ -51,21 +52,22 @@ export const Nav = styled.nav`
     align-items:center;
     width:100%;
     ul{
-
+        
+        height: 60px;
         color: #FFF;
         display: flex;
+        align-items: center;
     }
     ul li{
         list-style: none;
         margin-left: 15px;
-        font-size: 18px;
-        height: 100%;
+        font-size: 1.1rem;
         border-bottom: 3px solid rgba(0, 00 ,0, 0);
-        
         :hover{
             border-bottom: 3px solid rgba(90, 00 ,20, 0.8);
-          
+            color: rgba(50, 50 ,50);
         }
+        
     }
 `;
 
@@ -93,7 +95,8 @@ export const Text = styled.div`
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-top: 93px;
+    margin-top: 127px;
+    width:100%;
     img{
         width:230px;
     }
@@ -126,7 +129,7 @@ export const Contats = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    width:35%;
+    width: 40%;
     height: 180px;
 
     h3 span{
@@ -139,6 +142,7 @@ export const Contats = styled.div`
     p{
         color: black;
         font-size: 15px;
+        min-width: 355px;
     };
     
     
@@ -166,7 +170,7 @@ export const ContainerGroup = styled.div`
 export const GroupSobre = styled.div`
     display: flex;
     justify-content: space-evenly;
-    
+    padding-top: 120px;
     h1{
         font-size: 32px;
     }
@@ -178,8 +182,11 @@ export const GroupSobre = styled.div`
     }
     img{
         width:300px;
-        
+        position: contain;
     }
+
+    
+
 
 `
 
@@ -193,7 +200,9 @@ export const ConhecimentosTitulo = styled.div`
     margin-top: 250px;
     
     
-
+    h3, h1{
+        margin-bottom: 6px;
+    }
     h3 span{
         color: #900020;
     };
@@ -212,9 +221,13 @@ export const ConhecimentosTitulo = styled.div`
 export const CardGroup = styled.div`
     width: 90%;
     display:flex;
-    height:80%;
+    height:88%;
     justify-content: space-between;
     flex-direction: column;
+
+    h2{
+        font-size: 19px;
+    }
 `;
 export const Card = styled.div`
     width: 290px;
@@ -245,9 +258,18 @@ export const Image = styled.figure`
     align-items:center;
     justify-content: center;
     background-color: #900020;
-    width: 40px;
-    height: 40px;
+    width: 43px;
+    height: 43px;
+    padding: 5px;
+
     border-radius: 10px 10px 0 10px;
+`;
+export const ImageFoco = styled.figure`
+    width:450px;    
+
+    img{
+        width: 100%;
+    }
 `;
 
 /*footer */
@@ -281,8 +303,39 @@ export const ContatsImage = styled.figure`
     background-color: rgba(225, 255, 255, 0.4);
     border-radius: 50%;
     border: 1px solid rgba(90, 00, 20, 0.7);
-    padding: 10px;
+    width: 50px;
+    height: 50px;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-`;
+    @keyframes hoverColor {
+        0% {background-color: #fff; transform: rotate(0.0turn);}
+        100% {background-color: #900020; transform: rotate(-0.1turn);}
+        }
+    :hover{
+            transform: rotate(-0.1turn);
+            animation: hoverColor 2s forwards;
+            
+
+        }
+    img{
+       
+        margin-top:1px;
+
+        }
+    }
+    `;
+
+export const Copyright = styled.figure`
+    font-size: 13px;
+
+    span{
+        font-size: 15px;
+        font-weight: 900;
+        color: #000;
+    }
+
+    a{
+        color: #900020
+    }
+`
